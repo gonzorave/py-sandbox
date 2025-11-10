@@ -1,0 +1,23 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual envs
+venv/
+.venv/
+env/
+.env/
+
+# OS junk
+.DS_Store
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+
+# Build / dist
+build/
+dist/
+*.egg-info/
