@@ -24,7 +24,7 @@ share = total / 2 # Divide "total" by number of friends dining
 print("Each person needs to pay:" + str(share)) # Enter the required string and "share"
 # Hint: Remember to convert incompatible data types
 
-# task 4
+# task 5
 # Combine the variables to display the sentence "How do you like Python so far?"
 word1 = "How"
 word2 = "do"
@@ -36,7 +36,7 @@ word7 = "far?"
 
 print(word1 + " " + word2 + " " + word3 + " " + word4 + " " + word5 + " " + word6 + " " + word7)
 
-# task 5
+# task 6
 def greeting(name, department):
     print("Welcome, " + name)
     print("You are part of " + department)
