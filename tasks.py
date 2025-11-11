@@ -41,6 +41,61 @@ def greeting(name, department):
     print("Welcome, " + name)
     print("You are part of " + department)
 
-
 greeting("Blake", "Software engineering")
 greeting("Ellis", "Software engineering")
+
+# task 7
+time_list = [12, 2, 32, 19, 57, 22, 14]
+print(sorted(time_list))
+
+# task 8
+time_list = [12, 2, 32, 19, 57, 22, 14]
+print(min(time_list))
+print(max(time_list))
+
+# task 9
+def area_triangle(base, height):
+    return base*height/2
+area_a = area_triangle(5,4)
+area_b = area_triangle(7,3)
+sum = area_a + area_b
+print("The sum of both areas is: " + str(sum))
+
+# task 10
+name = "Kay"
+number = len(name) * 9
+
+print("Hello " + name + ". Your lucky number is " + str(number))
+
+name = "Cameron"
+number = len(name) * 9
+
+print("Hello " + name + ". Your lucky number is " + str(number))
+
+# The principles of code reuse
+def lucky_number(name):
+    number = len(name) * 9
+    print("Hello " + name + ". Your lucky number is " + str(number))
+
+lucky_number("Kay")
+lucky_number("Cameron")
+
+# task 11
+def convert_distance(km):
+    m = km * 1000  # exactly 1000 meters in 1 kilometer
+    return m
+
+my_trip_kilometers = 55
+
+# 2) Convert my_trip_kilometers to meters by calling the function above
+my_trip_meters = convert_distance(my_trip_kilometers)
+
+# 3) Fill in the blank to print the result of converting my_trip_kilometers
+print("The distance in meters is " + str(my_trip_meters))
+
+# task 12
+def print_seconds(hours, minutes, seconds):
+   print(hours*3600+minutes*60+seconds)
+
+print_seconds(1,2,3)
+#output will print to the screen
