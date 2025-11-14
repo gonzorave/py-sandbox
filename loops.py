@@ -100,3 +100,25 @@ multiplication_table(8)
 # 8x1=8
 # 8x2=16
 # 8x3=24
+
+# For loop example 1
+product = 1
+for n in range(1,10):
+  product = product * n
+
+print(product)
+
+# For loop example 2
+def to_celsius(x):
+  return (x-32)*5/9
+
+for x in range(0,101,10):
+  print(x, to_celsius(x))
+
+# Range (start, stop, step) syntax
+for n in range(x, y, z):
+    print(n)
+
+# Range example 1
+for i in range(5):
+    print('Access Denied')
