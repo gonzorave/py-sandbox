@@ -2,6 +2,7 @@
 while specified condition is True:
     body of loop
 """
+import phonenum
 
 # Example 1
 my_variable = 5
@@ -119,6 +120,104 @@ for x in range(0,101,10):
 for n in range(x, y, z):
     print(n)
 
-# Range example 1
+# Range example 2
 for i in range(5):
     print('Access Denied')
+
+# String ex 1
+greeting = 'Hello'
+for char in greeting:
+    print(char)
+
+# String ex 2
+greeting = 'Hello'
+for i in range(len(greeting)):
+    print(i)
+
+# String ex 3 indexing
+greeting = 'Hello'
+index = 0
+while index < len(greeting):
+    print(greeting[index])
+    index+=1
+
+# String ex 4 slicing
+greeting = 'Hello'
+index =0
+while index < len(greeting):
+    print(greeting[index: index+1])
+    index += 1
+
+# String ex 5 slicing
+string1 = "Greetings, Earthlings"
+print(string1[0])
+print(string1[4:9])
+print(string1[11:])
+print(string1[:5])
+
+# String ex 5 slicing (f index is negative, Python counts back from the end of the string instead of the beginning.)
+print(string1[-10:]) # Prints “Earthlings” again
+
+# String ex 6 stride
+print(string1[0::2]) # Prints “Getns atlns”
+
+print(string1[::-1]) # Prints “sgnilhtraE ,sgniteerG”
+
+# String ex 7 join
+print("Hello" + " " + "world") # +
+
+greetings = ["Hello", "world"]
+print(" ".join(greetings))  # .join
+
+name = "Alice"
+print("Hello, " + name + "!")  # concatenate a combination of strings and variables
+
+# String ex 8 slicing & join
+phoneum = '1234567890'
+area_code = '(' + phoneum [:3] + ')' # The first 3 digits are the area code
+
+exchange = phonenum[3:6] # The next 3 digits are called the “exchange” (slices the numbers 4–6 from the string)
+
+line = phonenum[-4:] # The last 4 digits are the line number
+
+# Ex 9
+def format_phone(phonenum): # All steps together
+    area_code = "(" + phonenum[:3] + ")"
+    exchange = phonenum[3:6]
+    line = phonenum[-4:]
+    return area_code + " " + exchange + "-" + line
+
+format_phone('2025551212')
+
+# Ex 10
+def greet_friends(friends):
+    for friend in friends:
+        print("Hi " + friend)
+
+greet_friends(["Barry"])
+
+# Ex 11 nested loops
+for x in range(2):
+    print("This is the outer loop iteration number " + str(x))
+    for y in range(3+1):
+        print("Inner loop iteration number " + str(y))
+    print("Exit inner loop")
+
+# Ex 12 with nested if statement
+for x in range(7):
+    if x % 2 == 0:
+        print(x) # The loop should print 0, 2, 4, 6
+
+even_numbers = [x for x in range(7) if x % 2 == 0] # As a list comprehension
+print(even_numbers)
+
+# Ex 13
+print("test " * 8) # prints test 8 times
+
+# Ex 14
+for i in range(1,11): # print the first 10 cube numbers (x**3) in a range that starts with x=1 and ends with x=10
+  print(i**3)
+
+# Ex 15
+for i in range(0, 100, 7): # loop with a three parameter range() function that prints the multiples of 7 between 0 and 100
+    print(i)
